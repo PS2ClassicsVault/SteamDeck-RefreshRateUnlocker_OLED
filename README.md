@@ -30,7 +30,6 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
    ./install-RefreshRateUnlocker.sh
    
 4. The script will check if sudo passwword is already set.\
-![image](https://user-images.githubusercontent.com/98122529/225724178-364284ac-f504-4798-b5e5-a03001dda5da.png)
 
    a. If the sudo password is already set, enter the current sudo password and the script will continue to run. Once you see this screen then the install is done!\
 ![image](https://user-images.githubusercontent.com/98122529/225747904-d0352779-40ef-4dfb-afad-c473b2a9bc5b.png)

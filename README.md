@@ -25,7 +25,7 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
    cd ~/ \
    git clone https://github.com/PS2ClassicsVault/SteamDeck-RefreshRateUnlocker_OLED.git
 3. Execute the script! \
-   cd ~/SteamDeck-RefreshRateUnlocker \
+   cd ~/SteamDeck-RefreshRateUnlocker_OLED \
    chmod +x install-RefreshRateUnlocker.sh \
    ./install-RefreshRateUnlocker.sh
    

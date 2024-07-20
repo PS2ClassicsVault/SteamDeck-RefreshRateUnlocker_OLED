@@ -10,7 +10,7 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 **Please support the original developers work!**
 
 ## What does this script do?!?
-1. The script checks if the gamescope-session is using the default values 40,60Hz refresh rates.
+1. The script checks if the gamescope-session is using the default values 40,90Hz refresh rates.
 2. If it's the default values, the script will create a backup of the file and then "patches" accordingly to what the user has chosen.
 3. The script creates a folder called ~/1RefreshRateUnlocker that contains additional helper scripts. Do not delete this folder!
 4. The script checks the gamescope-session every startup if it needs to be "patched" and applies the patch if needed.
@@ -20,9 +20,6 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 1. sudo password should already be set by the end user. If sudo password is not yet set, the script will ask to set it up.
 
 ## Installation Steps
-**IF YOU ARE USING AN OLDER VERSION OF THIS SCRIPT, UNINSTALL IT FIRST!**
-**IF YOU WANT TO SWITCH FROM 30,60 to 40,70 etc etc, MAKE SURE TO UNINSTALL FIRST AND THEN RE-RUN THE SCRIPT!**
-**[CLICK HERE FOR STEPS ON HOW TO UNINSTALL THE OLD VERSION](https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker/tree/7ccbc1a4e32f4244b27bf8dd15daaf39f307031a#how-to-uninstall)**
 1. Go into Desktop Mode and open a konsole terminal.
 2. Clone the github repo. \
    cd ~/ \

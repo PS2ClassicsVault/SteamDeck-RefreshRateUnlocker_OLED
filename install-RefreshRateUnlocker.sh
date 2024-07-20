@@ -7,7 +7,7 @@ clear
 
 echo Refresh Rate Unlocker ALPHA Script for OLED by ryanrudolf Modded by PS2 Classics Vault
 echo Discord user dan2wik for the idea on overclocking the display panel to 100Hz
-echo https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker
+echo https://github.com/PS2ClassicsVault/SteamDeck-RefreshRateUnlocker_OLED
 sleep 2
 
 # Password sanity check - make sure sudo password is already set by end user!
@@ -43,7 +43,7 @@ fi
 
 ###### Main menu. Ask user for the preferred refresh rate limit
 
-Choice=$(zenity --width 700 --height 300 --list --radiolist --multiple --title "Refresh Rate Unlocker - https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker"\
+Choice=$(zenity --width 700 --height 300 --list --radiolist --multiple --title "Refresh Rate Unlocker - https://github.com/PS2ClassicsVault/SteamDeck-RefreshRateUnlocker_OLED"\
 	--column "Select One" \
 	--column "Refresh Rate Limit" \
 	--column="Description - Read this carefully!"\
@@ -138,7 +138,7 @@ fi
 while true
 do
 Choice=\$(zenity --width 750 --height 350 --list --radiolist --multiple \
-	--title "Refresh Rate Unlocker  Toolbox - https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker"\\
+	--title "Refresh Rate Unlocker  Toolbox - https://github.com/PS2ClassicsVault/SteamDeck-RefreshRateUnlocker_OLED"\\
 	--column "Select One" \\
 	--column "Option" \\
 	--column="Description - Read this carefully!"\\

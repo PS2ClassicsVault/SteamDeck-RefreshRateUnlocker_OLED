@@ -32,14 +32,10 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 4. The script will check if sudo passwword is already set.\
 
    a. If the sudo password is already set, enter the current sudo password and the script will continue to run. Once you see this screen then the install is done!\
-![image](https://user-images.githubusercontent.com/98122529/225747904-d0352779-40ef-4dfb-afad-c473b2a9bc5b.png)
 
    b. If wrong sudo password is provided the script will exit immdediately. Re-run the script and enter the correct sudo password!\
-![image](https://user-images.githubusercontent.com/98122529/225724539-d73dc9ce-c468-49d1-8d2c-83276bfc34bb.png)
          
    c. If the sudo password is blank / not yet set, the script will prompt to setup the sudo password. Re-run the script again to continue.\
-![image](https://user-images.githubusercontent.com/98122529/225725477-33f8ffaa-13a1-452e-b993-aceb3192726f.png)
-
 
 5. Make your selection.\
 

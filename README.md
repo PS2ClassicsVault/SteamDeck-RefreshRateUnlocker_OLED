@@ -7,7 +7,7 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 
 **This script is experimental and i only modified this script for testing purposes, if you wish to test it, this script is based off the original script by ryanrudolfoba, do not expect results i am doing this on my own**
 
-**Please support the original developers work!**
+**Please support the original developers work!, i do not need your donations so please support the origivsal dev [here](https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker)**
 
 ## What does this script do?!?
 1. The script checks if the gamescope-session is using the default values 40,90Hz refresh rates.

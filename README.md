@@ -56,6 +56,6 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 
 ## Known Issues
 1. When taking a screenshot in-game, the screen will momentarily go blank as it toggles to 60Hz, and then goes back to the custom refresh rate once the screenshot is done.
-2. 100Hz will not be displayed in the QAM even when turning off Unified Frame Limit Management, however turning offthe framelimit helps.
-3. Applications will still report 90Hz regardless, this needs additional assitance to get this script to function properly, but the system seems more reposive with this script installed.
+2. 100Hz will not be displayed in the QAM even when turning off Unified Frame Limit Management, however turning off the framelimit helps.
+3. Applications will still report 90Hz regardless, this needs additional assitance to get this script to function properly, but the system seems more resposive with this script installed.
 

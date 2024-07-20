@@ -4,7 +4,9 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 
 ## NOTE: 
 **This script is only for the OLED model, if you wish to use the script from the LCD models please see the original [Github](https://github.com/ryanrudolfoba/SteamDeck-RefreshRateUnlocker)**
+
 **This script is experimental and i only modified this script for testing purposes, if you wish to test it, this script is based off the original script by ryanrudolfoba.**
+
 **Please support the original developers work!**
 
 ## What does this script do?!?

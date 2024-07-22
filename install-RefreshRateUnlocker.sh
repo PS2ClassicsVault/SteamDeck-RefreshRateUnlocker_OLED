@@ -78,14 +78,14 @@ fi
 #################################################################################
 
 # create ~/1RefreshRateUnlocker and place the additional scripts in there
-mkdir ~/1RefreshRateUnlocker &> /dev/null
-rm -f ~/1RefreshRateUnlocker/* &> /dev/null
+mkdir ~/SteamDeck-RefreshRateUnlocker_OLED &> /dev/null
+rm -f ~/SteamDeck-RefreshRateUnlocker_OLED/* &> /dev/null
 
 # RefreshRateUnlocker.sh - script that gets called by refresh-rate-unlocker.service on startup
-cat > ~/1RefreshRateUnlocker/RefreshRateUnlocker.sh << EOF
+cat > ~/SteamDeck-RefreshRateUnlocker_OLED/RefreshRateUnlocker.sh << EOF
 #!/bin/bash
 
-RefreshRateUnlockerStatus=/home/deck/1RefreshRateUnlocker/status.txt
+RefreshRateUnlockerStatus=/home/deck/SteamDeck-RefreshRateUnlocker_OLED/status.txt
 
 echo RefreshRateUnlocker > \$RefreshRateUnlockerStatus
 date >> \$RefreshRateUnlockerStatus
@@ -108,7 +108,7 @@ fi
 EOF
 
 # refresh-rate-unlocker.service - systemd service that calls RefreshRateUnlocker.sh on startup
-cat > ~/1RefreshRateUnlocker/refresh-rate-unlocker.service << EOF
+cat > ~/SteamDeck-RefreshRateUnlocker_OLED/refresh-rate-unlocker.service << EOF
 
 [Unit]
 Description=Custom systemd service that unlocks custom refresh rates.
@@ -125,7 +125,7 @@ EOF
 ################################################################################
 ####################### Refresh Rate Unlocker Toolbox ##########################
 ################################################################################
-cat > ~/1RefreshRateUnlocker/RefreshRateUnlocker-Toolbox.sh << EOF
+cat > ~/SteamDeck-RefreshRateUnlocker_OLED/RefreshRateUnlocker-Toolbox.sh << EOF
 #!/bin/bash
 zenity --password --title "Password Authentication" | sudo -S ls &> /dev/null
 if [ \$? -ne 0 ]
@@ -158,7 +158,7 @@ then
 
 elif [ "\$Choice" == "Status" ]
 then
-	zenity --warning --title "Refresh Rate Unlocker Toolbox" --text "\$(fold -w 120 -s ~/1RefreshRateUnlocker/status.txt)" --width 400 --height 600
+	zenity --warning --title "Refresh Rate Unlocker Toolbox" --text "\$(fold -w 120 -s ~/SteamDeck-RefreshRateUnlocker_OLED/status.txt)" --width 400 --height 600
 
 elif [ "\$Choice" == "20,90" ] || [ "\$Choice" == "30,90" ] || [ "\$Choice" == "20,100" ] || [ "\$Choice" == "30,100" ] || [ "\$Choice" == "40,100" ]
 then
@@ -190,8 +190,8 @@ then
 	sudo systemctl daemon-reload
 	sudo steamos-readonly enable
 
-	rm -rf ~/1RefreshRateUnlocker
-	rm -rf ~/SteamDeck-RefreshRateUnlocker
+	rm -rf ~/SteamDeck-RefreshRateUnlocker_OLED
+	rm -rf ~/SteamDeck-RefreshRateUnlocker_OLED
 	rm ~/Desktop/RefreshRateUnlocker-Toolbox
 
 	zenity --warning --title "Refresh Rate Unlocker Toolbox" --text "Uninstall complete! Reboot for changes to take effect!" --width 400 --height 75
@@ -205,9 +205,9 @@ EOF
 ################################################################################
 # copy the systemd script to a location owned by root to prevent local privilege escalation
 sudo steamos-readonly disable
-chmod +x ~/1RefreshRateUnlocker/*.sh
-sudo mv ~/1RefreshRateUnlocker/refresh-rate-unlocker.service /etc/systemd/system/refresh-rate-unlocker.service
-sudo mv ~/1RefreshRateUnlocker/RefreshRateUnlocker.sh /etc/systemd/system/RefreshRateUnlocker.sh
+chmod +x ~/SteamDeck-RefreshRateUnlocker_OLED/*.sh
+sudo mv ~/SteamDeck-RefreshRateUnlocker_OLED/refresh-rate-unlocker.service /etc/systemd/system/refresh-rate-unlocker.service
+sudo mv ~/SteamDeck-RefreshRateUnlocker_OLED/RefreshRateUnlocker.sh /etc/systemd/system/RefreshRateUnlocker.sh
 
 # start the service
 sudo systemctl daemon-reload
@@ -215,5 +215,5 @@ sudo systemctl enable --now refresh-rate-unlocker.service
 sudo steamos-readonly enable
 
 # create desktop icon for Refresh Rate Unlocker Toolbox
-ln -s ~/1RefreshRateUnlocker/RefreshRateUnlocker-Toolbox.sh ~/Desktop/RefreshRateUnlocker-Toolbox
+ln -s ~/SteamDeck-RefreshRateUnlocker_OLED/RefreshRateUnlocker-Toolbox.sh ~/Desktop/RefreshRateUnlocker-Toolbox
 echo -e "$RED"Desktop icon for Refresh Rate Unlocker Toolbox has been created!

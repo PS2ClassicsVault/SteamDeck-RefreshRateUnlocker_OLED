@@ -41,7 +41,7 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 
 6. Once the install is done, reboot the Steam Deck for changes to take effect.
          
-7. After reboot, the custom refresh rate will be available. It can be set as high as 100Hz!\
+7. After reboot, the custom refresh rate will be available. It can be set as high as 100Hz!
 
 
 ## How to Uninstall
@@ -51,11 +51,11 @@ Discord user dan2wik for the idea on overclocking the display panel to 100Hz!
 
 3. Once the uninstall is done, reboot the Steam Deck for changes to take effect.
          
-4. After reboot, the refresh rate will be back to the default 90Hz.\
+4. After reboot, the refresh rate will be back to the default 90Hz.
 
 
 ## Known Issues
-1. When taking a screenshot in-game, the screen will momentarily go blank as it toggles to 60Hz, and then goes back to the custom refresh rate once the screenshot is done.
+1. When taking a screenshot in-game, the screen will momentarily go blank as it toggles to 90Hz, and then goes back to the custom refresh rate once the screenshot is done.
 2. 100Hz will not be displayed in the QAM even when turning off Unified Frame Limit Management, however turning off the framelimit helps.
 3. Applications will still report 90Hz regardless, this needs additional assitance to get this script to function properly, but the system seems more resposive with this script installed.
 
